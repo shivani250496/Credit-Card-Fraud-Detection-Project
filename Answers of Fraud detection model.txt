@@ -1,0 +1,97 @@
+Q1: What is the primary goal of your fraud detection model?
+
+Ans: our primary goal is to detect credit card fraud of given data set, for that we have used naive bayes supervised machine learning algorithm. Naive bayes algorithm is basically done binary classification in the form of 0 and 1.in this project class 0 indicates genuine transaction and class 1 indicates fraud transaction.
+
+Q2: Why are sensitivity and precision important for this project?
+
+Ans: Precision and sensitivity are two evaluation metrics used to measure the performance of a classifier in binary and multiclass classification problems. Precision measures the accuracy of positive predictions, while sensitivity measures the completeness of positive predictions.
+Sensitivity = True positive/(True positive + False Negative)
+Precision = True positive/(True positive + False positive)
+
+Q3: What is the class distribution of fraud vs. non-fraud transactions in your dataset?
+
+Ans: Fraud transaction = 0.2%
+     Genuine or non fraud transaction = 99.8%
+
+Q4: Does the "Time" feature help in predicting fraud? How?
+
+Ans: No "Time" feature doesn't help in predicting fraud. Time_hr is not very useful to predict accuracy so we can remove it safely.
+
+Q5: Why should the "Amount" feature be standardized?
+
+Ans: To check at which amount limit more fraud are happened.
+
+Q6: Which features are dropped during Preprocessing and why?
+
+Ans: We have dropped some of principle component that have similar distribution in plot for removing redundancy after that we have dropped principle component and Time and in last step we dropped principle components + Time + Scaled Amount.
+
+Q7: How does Gaussian Naive Bayes handle continuous features?
+
+Ans: Real Valued attributes estimated by assuming a Gaussian distribution.
+Easiest to work with, only need mean and std from training data.
+calculate mean and std of input values(x) for each class to summarize the distribution.
+
+Q8: What are the steps in training the Naive Bayes model?
+
+Ans: Step 1 - Import basic libraries.
+Step 2 - Importing the dataset. 
+Step 3 - Data preprocessing. 
+Step 4 - Training the model.
+Step 5 - Testing and evaluation of the model.
+Step 6 - Visualizing the model.
+Step 7 - Measuring accuracy of a model.
+
+Q9: How are sensitivity and precision calculated?
+
+Ans: The formula of sensitivity and precision are:
+     Sensitivity = True positive/(True positive + False        Negative)
+     Precision = True positive/(True positive + False positive)
+
+Q10: What metrics do you use to evaluate model performance?
+
+Ans: We used Confusion metrics in Naive Bayes Machine Learning Algorithm.
+for calculate Acurracy the formula is:
+     (TP + TN)/(TP + FP + FN + TN)
+
+Q11: What re the key findings from your model's prediction?
+
+Ans: Recall Score(sensitivity) = 0.877551020408
+     Precision Score = 0.0863453815261
+     Accuracy Score = 0.983813770584
+     ROC AUC = 0.961155617872063
+
+Q12: How do different threshold values affect model performance?
+
+Ans: The more is threshold values, the less is accuracy. so we removed principle values + Time + Scaled amount for better accuracy and less redundancy.
+
+Q13: What are the limitations of Naive Bayes for fraud detection?
+
+Ans: The main limitations of naive Bayes is that it is sensitive to the quality of the data. If the data is noisy, incomplete, imbalanced, or contains irrelevant features, the naive Bayes algorithm may produce inaccurate or biased results.
+
+Q14: What other algorithms could improve performance?
+
+Ans: In this project we compared Naive bayes algorithm with logistic regression for better result analysis.
+
+Q15: How can your model be integrated into a real time fraud detection system?
+
+Ans: Naïve Bayes algorithm is used for classification problems. It is highly used in text classification. In text classification tasks, data contains high dimension (as each word represent one feature in the data). It is used in spam filtering, sentiment detection, rating classification etc.
+
+Q16: What are the ethical implications of deploying your fraud detection system?
+
+Ans: Ethical implications of deploying fraud detection system is to protect customer privacy with confidentiality and Transparency of data collection practices.
+
+Q17: What are the steps to implement Naive Bayes in Python?
+
+Ans: Step 1: Calculate the prior probability for given class labels.
+ Step 2: Find Likelihood probability with each attribute for each class.
+ Step 3: Put these value in Bayes Formula and calculate posterior probability. 
+ Step 4: See which class has a higher probability, given the input belongs to the higher probability class.
+
+Q18: How can cross-validation improve your model?
+
+Ans: In machine learning and statistical modeling, cross-validation is a technique used to evaluate a model's performance and prevent overfitting. To acquire accurate performance measurements, it entails splitting the dataset into numerous subsets and using some of them for model training and the remaining ones for testing.
+ 
+
+
+
+
