@@ -1,4 +1,4 @@
-# credit Card Fraud Detection Analysis
+# Credit Card Fraud Detection Analysis
 In this project Naive bayes classification is used for supervised machine learning algorithm,in which 492 frauds are analysed out of 2,84,807 transactions.
 Basic Principle of Naive Bayes Algorithm -
 The Bayes theorem is a mathematical formula for calculating conditional probability in probability and statistics.
